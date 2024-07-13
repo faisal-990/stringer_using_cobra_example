@@ -3,7 +3,7 @@ package stringer
 import (
 	"strconv"
 )
-func Reverse(input string) string {
+func Reverse(input string) (result string) {
 	for _,c:=range(input) {
 		result=string(c)+result
 	}
@@ -11,7 +11,7 @@ func Reverse(input string) string {
 
 }
 
-func Inspect(input string ,digits bool) (count int,kind string) {
+func Inspect(input string ,digit bool) (count int,kind string) {
 	//return the length of the string and inspect if it has any digit
 	if !digit {
 		return len(input), "char"
@@ -26,7 +26,7 @@ func inspectNumbers(input string) (count int) {
 			count++
 	}
 	}
-	return cnt;
+	return count;
 	//now i want these reverse and inspect function to a part of my command 
 	//i will create files in the root.go part and init the commands along with the rootCmd 
 	//which is the root command (starting index) of my cli code:
