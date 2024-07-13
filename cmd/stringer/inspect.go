@@ -17,7 +17,7 @@ var inspectCmd=&cobra.Command {
 		if res == 1 {
 		plurals=""
 		}
-		fmt.Printf("%s has a %d %s %s.\n",i,res,kind,plurals)
+		fmt.Printf("%s has a %d %s %s \n.",i,res,kind,plurals)
 	},
 }
 
