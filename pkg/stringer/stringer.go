@@ -18,7 +18,7 @@ func Inspect(input string ,digit bool) (count int,kind string) {
 	}
 	return inspectNumbers(input),"digit"
 }
-func inspectNumbers(input string) (count int) {
+func InspectNumbers(input string) (count int) {
 	//number in the form of string to be converted to int and then counted
 	for _,c:=range input {
 		_,err:=strconv.Atoi(string(c));
