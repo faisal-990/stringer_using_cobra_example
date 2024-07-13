@@ -30,6 +30,7 @@ var finditCmd = &cobra.Command{
 		}
 	},
 }
+//this part of the code initializes the finditCMd in the rootCmd 
 
 func init() {
 	rootCmd.AddCommand(finditCmd)
